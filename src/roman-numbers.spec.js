@@ -164,7 +164,6 @@ describe('convertToRoman', () => {
         console.log(result);
         expect(result).toStrictEqual('L')
     })
-
     
     it('sollte eine XC für 90 zurückgeben', () => {
         const ArabischeZahl = 90
@@ -268,4 +267,34 @@ describe('convertToRoman', () => {
         expect(result).toStrictEqual('MCCXXXII')
     })
 
+//testen, ob ein Error ausgegeben wird
+describe('convertToRoman', () => {
+    it('should return an error', () => {
+        const ArabischeZahl = 3001
+        result = convertToRoman(ArabischeZahl)
+        console.log(result);
+        expect(result).toStrictEqual('Values under 1 and above 3000 are not defined')
+    })
+
+    it('should return an error', () => {
+        const ArabischeZahl = -5
+        result = convertToRoman(ArabischeZahl)
+        console.log(result);
+        expect(result).toStrictEqual('Values under 1 and above 3000 are not defined')
+    })
+
+    it('should return an error', () => {
+        const ArabischeZahl = 5689
+        result = convertToRoman(ArabischeZahl)
+        console.log(result);
+        expect(result).toStrictEqual('Values under 1 and above 3000 are not defined')
+    })
+
+    it('should return an error', () => {
+        const ArabischeZahl = -3001
+        result = convertToRoman(ArabischeZahl)
+        console.log(result);
+        expect(result).toStrictEqual('Values under 1 and above 3000 are not defined')
+    })
+})
 })
