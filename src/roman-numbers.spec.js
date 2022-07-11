@@ -31,4 +31,19 @@ describe('convertToRoman', () => {
         console.log(result);
         expect(result).toStrictEqual('III')
     })
+
+    it('sollte eine V für 5 zurückgeben', () => {
+        const ArabischeZahl = 5
+        result = convertToRoman(ArabischeZahl)
+        console.log(result);
+        expect(result).toStrictEqual('V')
+    })
+
+    it('sollte eine X für 10 zurückgeben', () => {
+        const ArabischeZahl = 10
+        result = convertToRoman(ArabischeZahl)
+        console.log(result);
+        expect(result).toStrictEqual('X')
+    })
+
 })
