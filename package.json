@@ -1,0 +1,23 @@
+{
+  "name": "webdev_aufgabe2_roemischezahlen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wiebkebienk/WebDev_Aufgabe2_roemischeZahlen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wiebkebienk/WebDev_Aufgabe2_roemischeZahlen/issues"
+  },
+  "homepage": "https://github.com/wiebkebienk/WebDev_Aufgabe2_roemischeZahlen#readme",
+  "devDependencies": {
+    "jest": "^28.1.2"
+  }
+}
