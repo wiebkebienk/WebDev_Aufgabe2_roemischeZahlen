@@ -4,6 +4,11 @@ const convertToRoman = (ArabischeZahl) =>{
     const EinheitArabisch = new Array(1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1);
     let RoemischeZahl = "";
 
+    if (ArabischeZahl <= 0 || ArabischeZahl > 3000) {
+        return "Values under 1 and above 3000 are not defined"
+    }
+
+    else{ 
     for (var Nr = 0; Nr < EinheitArabisch.length; Nr++)
         while (ArabischeZahl >= EinheitArabisch[Nr]) {
             RoemischeZahl += EinheitRoemisch[Nr];
@@ -12,6 +17,7 @@ const convertToRoman = (ArabischeZahl) =>{
 
     return RoemischeZahl;
     }
+}
 
 module.exports = {
 convertToRoman
